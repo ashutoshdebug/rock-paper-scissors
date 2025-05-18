@@ -12,8 +12,3 @@ A simple, web‑based Rock‑Paper‑Scissors game built with plain HTML, CSS, a
 - 🖥️ **Visual Feedback**: Shows chosen icons (`fist.png`, `hand.png`, etc.) and result text.  
 - 🔢 **Score Tracking**: Tallies wins, losses, and ties.  
 - 🎨 **Responsive Design**: Works on desktop and mobile screen sizes.
-
-## Installation  
-1. **Clone** the repository:  
-   ```bash
-   git clone https://github.com/ashutoshdebug/rock-paper-scissors.git
