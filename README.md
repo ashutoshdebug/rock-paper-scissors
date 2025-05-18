@@ -1,7 +1,5 @@
 # Rock-Paper-Scissors
 
-Below is a suggested **README.md** you can add to your `rock‑paper‑scissors` repository. It covers project description, setup, usage, and more—all in markdown format.
-
 ````markdown
 # Rock‑Paper‑Scissors
 
