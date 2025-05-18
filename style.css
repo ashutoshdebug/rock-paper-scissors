@@ -87,6 +87,18 @@
       color: white;
       border: #94b883;
   }
+
+  #developed {
+    display: flex;
+    align-items: flex-end;
+    height: 50px;
+    justify-content: center;
+  }
+
+  #developed a{
+    text-decoration: none;
+    color: grey;
+  }
   @keyframes bounce {
     0% { transform: translateY(0); }
     50% { transform: translateY(30px); }
