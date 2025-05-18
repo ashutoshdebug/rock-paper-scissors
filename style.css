@@ -15,18 +15,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50%;
+    height: 40%;
   }
   .gameboard {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     gap: 40px;
-  }
-  .hand-1, .hand-2 {
-    width: 200px;
-    height: 200px;
-    background-color: #e0ac69;
   }
   .hand-1 img, .hand-2 img {
     width: 100%;
@@ -47,10 +42,26 @@
     justify-content: center;
     gap: 20px;
     font-size: 24px;
+    font-weight: bolder;
     margin: 20px 0;
     cursor: pointer;
+    width: 40%;
   }
-  #result {
+  .movebuttons {
+    border: 2px solid black;
+    padding: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+    border-radius: 30px;
+  }
+  .movebuttons:hover {
+    background-color: #94b883;
+    color: white;
+    border: #94b883;
+}
+#result {
     text-align: center;
     font-size: 28px;
     font-weight: bold;
@@ -61,11 +72,20 @@
     margin-top: 20px;
     font-size: 20px;
   }
-  button {
+  .reset {
     margin-top: 15px;
     padding: 10px 20px;
-    font-size: 18px;
+    font-size: 24px;
+    border-radius: 30px;
+    font-weight: bolder;
     cursor: pointer;
+    border: 2px solid black;
+}
+
+.reset:hover {
+      background-color: #94b883;
+      color: white;
+      border: #94b883;
   }
   @keyframes bounce {
     0% { transform: translateY(0); }
