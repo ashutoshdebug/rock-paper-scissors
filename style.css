@@ -1,121 +1,141 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  body {
-    height: 100vh;
-    font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    user-select: none;
-  }
-  #container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 40%;
-  }
-  .gameboard {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 40px;
-  }
-  .hand-1 img, .hand-2 img {
-    width: 100%;
-    height: 100%;
-  }
-  .hand-2 img {
-    transform: rotateY(180deg);
-  }
-  .bounceanimeplayer {
-    animation: bounce 1s 3;
-  }
-  .bounceanimecomp {
-    animation: bouncecomp 1s 3;
-  }
-  #move {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    font-size: 24px;
-    font-weight: bolder;
-    margin: 20px 0;
-    cursor: pointer;
-    width: 40%;
-  }
-  .movebuttons {
-    border: 2px solid black;
-    padding: 2vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* width: 33%; */
-    border-radius: 30px;
-  }
-  .movebuttons:hover {
-    background-color: #94b883;
-    color: white;
-    border: #94b883;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-focus-ring-color: transparent;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-focus-ring-color: transparent;
+  outline: none;
+}
+body {
+  height: 100vh;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40%;
+}
+.gameboard {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 40px;
+}
+.hand-1 img,
+.hand-2 img {
+  width: 100%;
+  height: 100%;
+}
+.hand-2 img {
+  transform: rotateY(180deg);
+}
+.bounceanimeplayer {
+  animation: bounce 1s 3;
+}
+.bounceanimecomp {
+  animation: bouncecomp 1s 3;
+}
+#move {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 24px;
+  font-weight: bolder;
+  margin: 20px 0;
+  cursor: pointer;
+  user-select: none;
+  width: 40%;
+}
+.movebuttons {
+  border: 2px solid black;
+  padding: 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33%;
+  border-radius: 30px;
+}
+.movebuttons:hover {
+  background-color: #94b883;
+  color: white;
+  border: #94b883;
 }
 #result {
-    text-align: center;
-    font-size: 28px;
-    font-weight: bold;
-    margin-top: 10px;
-  }
-  #scoreboard {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 20px;
-  }
-  .reset {
-    margin-top: 15px;
-    padding: 10px 20px;
-    font-size: 24px;
-    border-radius: 30px;
-    font-weight: bolder;
-    cursor: pointer;
-    border: 2px solid black;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+#scoreboard {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.reset {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 24px;
+  border-radius: 30px;
+  font-weight: bolder;
+  cursor: pointer;
+  border: 2px solid black;
 }
 
 .reset:hover {
-      background-color: #94b883;
-      color: white;
-      border: #94b883;
-  }
+  background-color: #94b883;
+  color: white;
+  border: #94b883;
+}
 
-  #developed {
-    display: flex;
-    align-items: flex-end;
-    height: 50px;
-    justify-content: center;
-  }
+#developed {
+  display: flex;
+  align-items: flex-end;
+  height: 50px;
+  justify-content: center;
+}
 
-  #developed a{
-    text-decoration: none;
-    color: grey;
+#developed a {
+  text-decoration: none;
+  color: grey;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
   }
-  @keyframes bounce {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(30px); }
-    100% { transform: translateY(0); }
+  50% {
+    transform: translateY(30px);
   }
-  @keyframes bouncecomp {
-    0% { transform: translateY(0) rotateY(180deg); }
-    50% { transform: translateY(30px) rotateY(180deg); }
-    100% { transform: translateY(0) rotateY(180deg); }
+  100% {
+    transform: translateY(0);
   }
+}
+@keyframes bouncecomp {
+  0% {
+    transform: translateY(0) rotateY(180deg);
+  }
+  50% {
+    transform: translateY(30px) rotateY(180deg);
+  }
+  100% {
+    transform: translateY(0) rotateY(180deg);
+  }
+}
 
-  @media only screen and (max-width: 976px ) {
-    #move {
-      flex-direction: column;
-    }
-    .movebuttons {
-      width: 100%;
-    }
+@media only screen and (max-width: 976px) {
+  #move {
+    flex-direction: column;
   }
+  .movebuttons {
+    width: 100%;
+  }
+}
